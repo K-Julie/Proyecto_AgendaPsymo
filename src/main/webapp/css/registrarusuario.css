@@ -1,0 +1,136 @@
+/* RESETEO GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #ffffff; /* Fondo blanco */
+  color: #3B3B3B;
+}
+
+/* HEADER */
+header {
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+header h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3B3B3B;
+}
+
+/* MAIN */
+main{
+   display: flex;
+    justify-content: center;
+    align-items: flex-start; /* lo alinea hacia arriba */
+    padding: 2rem 2rem; /* más espacio arriba, menos abajo */
+
+}
+
+/* FORMULARIO */
+.formularioRegistro {
+  display: flex;
+  flex-wrap: wrap;              /* ✅ permite que los campos bajen a otra línea */
+  justify-content: space-between;
+  gap: 0.8rem;                  /* espacio entre los campos */
+  padding: 1.5rem 2rem;
+  border: 1px solid #d4d4d4;
+  border-radius: 0.625rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  background-color: #fff;
+  max-width: 750px;
+  margin: 1.5rem 0;
+}
+
+/* CONTENEDOR DEL FORMULARIO */
+.formularioRegistro label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.formularioRegistro input,
+.formularioRegistro select {
+  font-size: 0.9rem;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Cada bloque de campo ocupa el 48% del ancho */
+.formularioRegistro div {
+  width: 48%;
+}
+
+/* Los elementos que deben ocupar toda la fila */
+.formularioRegistro .full {
+  width: 100%;
+}
+
+.contenedorFormulario h2 {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #3B3B3B;
+}
+
+/* BOTÓN */
+.btnRegistrar {
+  background-color: #b57aff;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+  display: block;
+  margin: 1rem auto 0 auto; /* ✅ centrado */
+}
+
+.btnRegistrar:hover {
+  background-color: #9f63e6;
+}
+
+/* FOOTER */
+footer {
+  background: #C09EDE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  margin-top: auto;
+}
+
+.logoFooter {
+  width: 6rem;
+  height: auto;
+}
+
+footer p {
+  margin: 0;
+  font-size: clamp(0.7rem, 1vw, 0.9rem);
+  text-align: center;
+  line-height: 1.4;
+}

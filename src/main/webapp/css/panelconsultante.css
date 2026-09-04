@@ -1,0 +1,149 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/*RESETEO GENERAL*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*ESTRUCTURA GENERAL*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("../imagenes/consulta_login.jpg");  /*Los dos puntos indican "salir una carpeta atrás"*/
+    background-size: cover;       /* Para que la imagen cubra toda la pantalla */
+    background-position: center; 
+    background-attachment: fixed; /* Para que no se mueva al hacer scroll */
+    position: relative;          
+    min-height: 100vh; /* Asegura que cubra toda la altura */
+    margin: 0;
+}
+
+/* Capa semitransparente encima del fondo */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6); 
+    z-index: -1; /* Para que no tape el contenido */
+}
+
+/*Color de fondo para header y footer*/
+header, footer {
+    background-color: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(5px); /* efecto vidrio difuminado */
+}
+/*HEADER*/
+header{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 0.5rem 0.2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(150, 100, 200, 0.2);
+
+}
+
+/*Logo + Bienvenido*/
+.logoBienvenido {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+/*logo header*/
+.logo {
+    height: 7rem;
+}
+
+/*Texto Bienvenido*/
+header h1 {
+    font-size: 1.1rem;
+    font-weight:bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #3B3B3B;
+}
+
+/*Cerrar Sesión*/
+.cerrarSesion {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 0.5rem;
+    color: #3B3B3B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+}
+/*Efectos*/
+.cerrarSesion:hover {
+    color: #b57aff;
+}
+.cerrarSesion:hover .iconoSalir {
+     filter: brightness(0) saturate(100%) invert(70%) sepia(40%) saturate(500%) hue-rotate(230deg);
+}
+
+/*Icono cerrar sesión*/
+.iconoSalir {
+    height: 2rem;
+}
+
+/*MAIN*/
+main {
+    display: flex;
+    flex: 1;              
+    justify-content: center;     
+    align-items: center;
+    gap: 2rem;                  
+    margin: 2rem;                
+}
+
+/* Estilos generales para las cards */
+.card {
+    flex: 1;
+    max-width: 300px;
+    padding: 1.5rem;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #9E82BD;
+    background-color: #f5f0ff;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+/*Para el efecto de cambio cuando el cursor pase por encima de cada card*/
+.card:hover {
+    transform: translateY(-5px);
+    background-color: #7a5bef;
+    color: #fff;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card img {
+    height: 50px;  /* altura fija */
+    width: auto;   /* mantiene proporción */
+    margin-bottom: 1rem;
+    color: #7D5BA6;
+}
+
+/*FOOTER*/
+footer {
+    display: flex;               
+    justify-content: center;     
+    align-items: center;         
+    padding: 1rem; 
+}
+
+footer img {
+    height: 2.4rem;   /* tamaño del logo */
+    width: auto;    /* mantiene proporción */
+}
+

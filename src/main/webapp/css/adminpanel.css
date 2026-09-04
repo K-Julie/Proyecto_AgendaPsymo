@@ -1,0 +1,162 @@
+/* RESETEO GENERAL */
+body {
+    margin: 0;
+    background-color: #E8E6EB;
+    color: #3B3B3B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* HEADER */
+header {
+    background-color: whitesmoke;
+    color: #3B3B3B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    padding: 1rem 6rem;
+}
+
+header .logoBienvenido {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logoApp {
+    height: 50px;
+    width: auto;
+}
+
+header h1 {
+    font-size: 1.1rem;
+    margin: 0;
+    
+}
+
+.cerrarSesion {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 0.5rem;
+    color: #3B3B3B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+}
+
+.iconoSalir {
+    height: 2rem;
+}
+
+/* MAIN */
+main {
+    padding: 2rem;
+}
+
+main h1{
+    font-size: 1.4rem;
+}
+/*BOTÓN PARA REGISTRAR USUARIO*/
+.btnAgregar  {
+    
+display:inline-block; 
+margin: 1rem; 
+padding: 1rem 2rem;
+background:#4CAF50; 
+color:white; 
+border-radius:0.8rem;
+text-decoration:none;
+font-size:0.9rem;
+}
+
+/* BUSCADOR */
+.buscadorUsuarios {
+    margin-bottom: 2rem;
+}
+
+.buscadorUsuarios form {
+    display: flex;
+    gap: 0.5rem;
+    height: 3rem;
+}
+
+.buscadorUsuarios input[type="text"] {
+    flex: 1;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.buscadorUsuarios button {
+    padding: 0.5rem 1rem;
+    background-color: #2e86c1;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buscadorUsuarios button:hover {
+    background-color: #21618c;
+}
+
+/* TABLA DE USUARIOS */
+.tablaUsuarios table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.tablaUsuarios th, .tablaUsuarios td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tablaUsuarios th {
+    background-color: #3B3B3B;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.tablaUsuarios tr:hover {
+    background-color: #f1f1f1;
+}
+
+.tablaUsuarios a {
+    text-decoration: none;
+    color: #2e86c1;
+}
+
+.tablaUsuarios a:hover {
+    text-decoration: underline;
+    color: #1b4f72;
+}
+.icono-btn {
+    height: 1.7rem;
+}
+
+/*MODAL*/
+.modal {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    max-width: 20rem;
+    width: 80%;
+    font-size: 0.8rem;
+}

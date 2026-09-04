@@ -1,0 +1,22 @@
+# Archivos compilados
+/build/
+/target/
+/*.class
+
+# Configuración privada de NetBeans
+nbproject/private/
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Archivos temporales o de respaldo
+*.tmp
+*.swp
+*.bak
+
+
+

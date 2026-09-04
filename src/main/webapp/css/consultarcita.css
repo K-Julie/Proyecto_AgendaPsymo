@@ -1,0 +1,167 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+
+/* RESETEO GENERAL*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* BODY */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("../imagenes/consulta_login.jpg");  /*Los dos puntos indican "salir una carpeta atrás"*/
+    background-size: cover;       /* Para que la imagen cubra toda la pantalla */
+    background-position: center; 
+    background-attachment: fixed; /* Para que no se mueva al hacer scroll */
+    position: relative;          
+    min-height: 100vh; /* Asegura que cubra toda la altura */
+    margin: 0;
+}
+
+/* Capa semitransparente encima del fondo */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6); 
+    z-index: -1; /* Para que no tape el contenido */
+}
+
+/* HEADER */
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:6rem;
+    padding: 0.5rem 0.2rem; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(5px); /* efecto vidrio difuminado */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(150, 100, 200, 0.2);
+}
+
+/*Texto Mis Citas*/
+header h1{
+    font-size: 1.1rem;
+    font-weight:bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#3B3B3B;
+    text-align: center;
+}
+.cerrarSesion {
+    position: absolute; /*Fija*/
+    right: 2rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 0.5rem;
+    color: #3B3B3B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    margin-right: 3rem;
+}
+/*Efectos*/
+.cerrarSesion:hover {
+    color: #b57aff;
+}
+.cerrarSesion:hover .iconoSalir {
+     filter: brightness(0) saturate(100%) invert(70%) sepia(40%) saturate(500%) hue-rotate(230deg);
+}
+
+/*Icono cerrar sesión*/
+.iconoSalir {
+    height: 2rem;
+}
+
+/* BOTÓN REGRESAR */
+.regresarContenedor{
+    margin-top: 1.8rem;
+}
+
+.regresar {
+    align-self: flex-start; /* Lo lleva a la izquierda */
+    color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    text-decoration: none;
+    padding: 0.2rem 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.regresar:hover {
+    background-color: #f5f0ff;
+    color:#C09EDE;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* CONTENEDOR */
+.contenedor {
+    display: flex;
+    min-height: 22rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 1.2rem; /* Espacio entre elementos */
+    background: #fff; /* fondo blanco sólido */
+    border-radius: 0.625rem; /* bordes redondeados */
+    box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.1); /* sombra suave */
+    padding: 1.25rem; /* separación interna */
+    margin: 2rem 2rem;
+
+}
+
+/*TABLA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8rem;
+}
+
+table th, table td {
+    padding: 0.5rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f5f0ff;
+    color: #3B3B3B;
+    font-weight: bold;
+}
+/* BOTÓN igual que consultar y agendar */
+
+.btnCancelar {
+    align-self: center;
+    background-color: #b57aff;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.7rem;
+    font-weight: bold;
+    border: none;
+    padding: 0.6rem 1.3rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btnCancelar:hover {
+    background-color: #9f63e6;
+    transform: translateY(-2px);
+}
+
