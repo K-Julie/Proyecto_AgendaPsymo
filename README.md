@@ -22,9 +22,10 @@ Java - Servlets - JSP - MySQL - Apache Tomcat - Maven
 *Contraseña* : 123456
 
 **Consultantes**
+
  *Usuario* : CC | 2930029
  *Contraseña* : 345678
- _______
+ 
 *Usuario* : CC | 1010145002
 *Contraseña* : jeffer
  
